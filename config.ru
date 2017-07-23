@@ -1,20 +1,13 @@
-require 'rack/contrib/try_static'
+require 'middleman-core/load_paths'
+::Middleman.setup_load_paths
 
-use Rack::Deflater
-use Rack::TryStatic,
-  root: 'tmp',
-  urls: %w[/],
-  try: %w[.html index.html /index.html]
+require 'middleman-core'
+require 'middleman-core/rack'
 
-FIVE_MINUTES=300
+require 'fileutils'
+FileUtils.mkdir('log') unless File.exist?('log')
+::Middleman::Logger.singleton("log/#{ENV['RACK_ENV']}.log")
 
-run lambda { |env|
-  [
-    404,
-    {
-      'Content-Type'  => 'text/html',
-      'Cache-Control' => "public, max-age=#{FIVE_MINUTES}"
-    },
-    ['File not found']
-  ]
-}
+app = ::Middleman::Application.new
+
+run ::Middleman::Rack.new(app).to_app
