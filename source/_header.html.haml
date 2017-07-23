@@ -1,11 +1,23 @@
-%div(data-sticky-container)
-  .top-bar(data-sticky){data: { options: "marginTop:0;" }, style: "width:100%" }
-    .top-bar-left
-      .title
-        .top
-          DSA Libertarian Socialist Caucus
-        .bottom
-          Revolutionary Democratic Socialism
-    .top-bar-right
-      .image
-        = image_tag('lsc-logo.png')
+%div#top-bar(data-sticky-container)
+  .top-bar-container(data-sticky){data: { options: "marginTop:0;" }, style: "width:100%" }
+    .top-bar(data-magellan){data: {'bar-offset': 150}}
+      .top-bar-left
+        .title
+          .top
+            DSA Libertarian Socialist Caucus
+          .bottom
+            Revolutionary Democratic Socialism
+        %ul.horizontal.menu.links
+          %li
+            %a{href: '#who-we-are'}Who We Are
+          %li
+            %a{href: '#our-principles'}Our Principles
+          %li
+            %a{href: '#what-we-engage-in'}What We Engage In
+          %li
+            %a{href: '#our-vision'}Our Vision
+          %li
+            %a{href: '#join-us'}Join Us
+      .top-bar-right.hide-for-small-only
+        .image
+          = image_tag('lsc-logo.png')

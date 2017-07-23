@@ -7,6 +7,14 @@
   .title .bottom {
     font-size: rem-calc(24);
   }
+  .links {
+    a {
+      color: $red;
+    }
+  }
+  .menu > li > a {
+    padding: 0.5rem;
+  }
 }
 
 .content {
@@ -14,6 +22,10 @@
     border-bottom: 1px solid $red;
     font-size: rem-calc(24);
     margin-bottom: rem-calc(20);
+    a {
+      color: inherit;
+      cursor: default;
+    }
   }
 
   blockquote {
@@ -23,5 +35,12 @@
   cite {
     text-align: right;
   }
-  
+
+  .bold {
+    font-weight: 700;
+  }
+}
+
+footer {
+  text-align: center;
 }
