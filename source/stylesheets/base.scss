@@ -13,7 +13,16 @@
     }
   }
   .menu > li > a {
-    padding: 0.5rem;
+    padding: 0.7rem;
+    margin-right: 0.8rem;
+
+    &.active {
+      border-bottom: 1px solid $white;
+    }
+
+    &:first-of-type {
+      padding-left: 0px;
+    }
   }
 }
 
@@ -21,7 +30,8 @@
   .title {
     border-bottom: 1px solid $red;
     font-size: rem-calc(24);
-    margin-bottom: rem-calc(20);
+    margin-bottom: rem-calc(30);
+    margin-top: rem-calc(10);
     a {
       color: inherit;
       cursor: default;
