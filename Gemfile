@@ -1,6 +1,13 @@
 # If you do not have OpenSSL installed, update
 # the following line to use "http://" instead
 source 'https://rubygems.org'
+ruby '~>2.4.0'
+
+gem 'puma'
+gem 'rack-contrib'
+gem 'rack-ssl'
+gem 'rack-cache'
+
 
 gem "middleman", github: 'middleman/middleman', ref: '09f3be9ab'
 gem "middleman-sprockets"
