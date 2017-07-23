@@ -1,0 +1,27 @@
+.top-bar {
+  .top-bar-left {
+  }
+  .title .top {
+    font-size: rem-calc(30);
+  }
+  .title .bottom {
+    font-size: rem-calc(24);
+  }
+}
+
+.content {
+  .title {
+    border-bottom: 1px solid $red;
+    font-size: rem-calc(24);
+    margin-bottom: rem-calc(20);
+  }
+
+  blockquote {
+    font-family: $serif-font-family;
+  }
+
+  cite {
+    text-align: right;
+  }
+  
+}
