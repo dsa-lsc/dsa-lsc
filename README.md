@@ -1,6 +1,16 @@
-# Foundation 6 Middleman Template
+# DSA LSC
 
-** `master` works wtih Middleman 4; for Middleman 3, see the `v3` tag. I'm no longer maintaining `v3`.**
+To get started editing the DSA LSC website:
+
+```
+1. git clone git@github.com:tadiou/dsa-lsc.git
+2. cd dsa-lsc
+3. bundle install
+4. bower install
+5. bundle exec middleman
+```
+
+DSA LSC uses middleman-foundation-6.
 
 middleman-foundation-6 is a minimal [Middleman](http://middlemanapp.com/) project template using the [SASS](http://sass-lang.com) version of the [ZURB Foundation](http://foundation.zurb.com) framework, version 6.
 
@@ -8,7 +18,7 @@ Lots of this is based on [middleman-zurb-foundation](https://github.com/axyz/mid
 
 ## Prerequisites
 
-1. ruby
+1. ruby (2.4.0)
 1. middleman ($ `gem install middleman`)
 1. bower ($ `npm install -g bower`)
 1. git

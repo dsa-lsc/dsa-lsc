@@ -1,6 +1,10 @@
+a {
+  transition: .3s color;
+}
+
 .top-bar {
-  .top-bar-left {
-  }
+  padding: 2rem;
+
   .title .top {
     font-size: rem-calc(30);
   }
@@ -27,6 +31,8 @@
 }
 
 .content {
+  padding-top: 2rem;
+
   .title {
     border-bottom: 1px solid $red;
     font-size: rem-calc(24);
@@ -52,5 +58,11 @@
 }
 
 footer {
+  padding: 4rem 0;
+  background-color: $white;
   text-align: center;
+
+  .bottom-image {
+    padding-bottom: 2rem;
+  }
 }
