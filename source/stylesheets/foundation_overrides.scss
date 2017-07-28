@@ -61,9 +61,10 @@ $dark-gray: #8a8a8a;
 $black: #231f20;
 $white: rgb(255, 247, 235);
 $red: #ec1f27;
-$body-background: $black;
-$body-font-color: $white;
+$body-background: $white;
+$body-font-color: $black;
 $body-font-family: 'Muli',' Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$title-font-family: 'Muli',' Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $serif-font-family: 'Noto Serif', Times, serif;
 $body-antialiased: true;
 $global-margin: 1rem;
@@ -104,7 +105,7 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: $body-font-family;
+$header-font-family: $title-font-family;
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
@@ -157,7 +158,7 @@ $list-nested-side-margin: 1.25rem;
 $defnlist-margin-bottom: 1rem;
 $defnlist-term-weight: $global-weight-bold;
 $defnlist-term-margin-bottom: 0.3rem;
-$blockquote-color: $white;
+$blockquote-color: $black;
 $blockquote-padding: rem-calc(30);
 $blockquote-border: 0px solid $red;
 $cite-font-size: rem-calc(13);

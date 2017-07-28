@@ -5,6 +5,10 @@ a {
 .top-bar {
   padding: 2rem;
 
+  .title {
+    color: $titlebar-color;
+  }
+
   .title .top {
     font-size: rem-calc(30);
   }
