@@ -9,12 +9,17 @@
             Revolutionary Democratic Socialism
         %ul.horizontal.menu.links
           %li
-            %a{href: '#who-we-are'}Who We Are
+            %a{ href: 'index.html', class: "#{active[:index] ? 'active': ''}"}Home
           %li
-            %a{href: '#our-principles'}Our Principles
+            %a{ href: 'readings.html', class: "#{active[:readings] ? 'active': ''}"}Readings
           %li
-            %a{href: '#what-we-engage-in'}What We Engage In
-          %li
-            %a{href: '#our-vision'}Our Vision
-          %li
-            %a{href: '#join-us'}Join Us
+            %a{ href: 'events.html', class: "#{active[:events] ? 'active': ''}"} Events
+        /     %a{href: '#who-we-are'}Who We Are
+        /   %li
+        /     %a{href: '#our-principles'}Our Principles
+        /   %li
+        /     %a{href: '#what-we-engage-in'}What We Engage In
+        /   %li
+        /     %a{href: '#our-vision'}Our Vision
+        /   %li
+        /     %a{href: '#join-us'}Join Us

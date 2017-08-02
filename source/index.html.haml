@@ -1,4 +1,4 @@
-= partial :header
+= partial :header, locals: { active: { index: true } }
 / READ THE BREAD BOOK
 .row.content
   .medium-6.columns.medium-centered.small-12
@@ -80,4 +80,18 @@
         or follow us on
         = link_to 'facebook.', 'https://www.facebook.com/LibertarianSocialistCaucus/'
       / READ THE BREAD BOOK
-= partial :footer
+
+  / %div#bottom-bar.small-12.columns(data-sticky-container)
+  /   .bottom-bar-container(data-sticky){data: { stick_to: 'bottom' } }
+  /     .bottom-bar(data-magellan)
+  /       .row
+  /         .columns.medium-2.small-4
+  /           %a{href: '#who-we-are'}Who We Are
+  /         .columns.medium-2.small-4
+  /           %a{href: '#our-principles'}Our Principles
+  /         .columns.medium-2.small-4
+  /           %a{href: '#what-we-engage-in'}What We Engage In
+  /         .columns.medium-2.small-4
+  /           %a{href: '#our-vision'}Our Vision
+  /         .columns.medium-2.small-4.end
+  /           %a{href: '#join-us'}Join Us

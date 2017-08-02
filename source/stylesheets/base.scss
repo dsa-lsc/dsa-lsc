@@ -7,6 +7,7 @@ a {
 
 .top-bar {
   padding: 2rem;
+  border-bottom: 1px solid $red;
 
   .title {
     color: $titlebar-color;
@@ -23,6 +24,8 @@ a {
       color: $red;
     }
   }
+}
+.top-bar, .botom-bar {
   .menu > li > a {
     padding: 0.7rem;
     margin-right: 0.8rem;
@@ -64,6 +67,10 @@ a {
   }
 }
 
+.bottom-nav-bar {
+
+}
+
 footer {
   padding: 4rem 0;
   background-color: $white;
@@ -72,4 +79,8 @@ footer {
   .bottom-image {
     padding-bottom: 2rem;
   }
+}
+
+.event-details {
+  list-style: none;
 }
