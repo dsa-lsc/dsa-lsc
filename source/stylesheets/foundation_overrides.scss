@@ -64,11 +64,12 @@ $red: #ec1f27;
 $body-background: $black;
 $body-font-color: $white;
 $body-font-family: 'Muli',' Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$title-font-family: $body-font-family;
 $serif-font-family: 'Noto Serif', Times, serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
-$global-weight-normal: normal;
+$global-weight-normal: 300;
 $global-weight-bold: bold;
 $global-radius: 0;
 $global-text-direction: ltr;
@@ -104,7 +105,7 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: $body-font-family;
+$header-font-family: $title-font-family;
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;

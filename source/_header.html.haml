@@ -1,11 +1,11 @@
 %div#top-bar(data-sticky-container)
   .top-bar-container(data-sticky){data: { options: "marginTop:0;" }, style: "width:100%" }
-    .top-bar(data-magellan){data: {'bar-offset': 150}}
+    .top-bar(data-magellan){data: {'bar-offset': 200}}
       .top-bar-left
         .title
-          .top
+          %h1.top
             DSA Libertarian Socialist Caucus
-          .bottom
+          %h2.bottom
             Revolutionary Democratic Socialism
         %ul.horizontal.menu.links
           %li
@@ -18,6 +18,3 @@
             %a{href: '#our-vision'}Our Vision
           %li
             %a{href: '#join-us'}Join Us
-      .top-bar-right.hide-for-small-only
-        .image
-          = image_tag('lsc-logo.png')

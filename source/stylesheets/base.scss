@@ -1,9 +1,16 @@
+body {
+  letter-spacing: 0.75px;
+}
 a {
   transition: .3s color;
 }
 
 .top-bar {
   padding: 2rem;
+
+  .title {
+    color: $titlebar-color;
+  }
 
   .title .top {
     font-size: rem-calc(30);
