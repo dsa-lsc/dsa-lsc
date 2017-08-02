@@ -67,8 +67,10 @@ a {
   }
 }
 
-.bottom-nav-bar {
-
+body.readings {
+  li span {
+    font-weight: bold;
+  }
 }
 
 footer {
