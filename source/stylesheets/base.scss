@@ -21,7 +21,7 @@ a {
   }
   .links {
     a {
-      color: $red;
+      font-weight: 700;
     }
   }
 }
@@ -67,12 +67,6 @@ a {
   }
 }
 
-body.readings {
-  li span {
-    font-weight: bold;
-  }
-}
-
 footer {
   padding: 4rem 0;
   background-color: $white;
@@ -85,4 +79,19 @@ footer {
 
 .event-details {
   list-style: none;
+}
+
+.readings {
+  section {
+    padding: 1rem 0;
+
+    h2 {
+      font-size: 1.2rem;
+      font-weight: bold;
+
+      span {
+        font-weight: normal;
+      }
+    }
+  }
 }
