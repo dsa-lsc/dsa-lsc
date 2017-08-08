@@ -15,6 +15,15 @@ compass_config do |config|
   config.javascripts_dir = "javascripts"
 end
 
+Time.zone = "Eastern Time (US & Canada)"
+
+activate :blog do |blog|
+  blog.sources = "{category}/{year}-{month}-{day}-{title}.html"
+  blog.permalink = "{category}/{year}/{month}/{day}/{title}.html"
+  blog.default_extension = '.haml'
+  blog.layout = 'news_layout'
+end
+
 ###
 # Page options, layouts, aliases and proxies
 ###

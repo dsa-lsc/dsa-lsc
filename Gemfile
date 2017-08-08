@@ -13,6 +13,7 @@ gem "middleman", github: 'middleman/middleman', ref: '09f3be9ab'
 gem "middleman-blog"
 gem "middleman-compass"
 gem "middleman-sprockets"
+gem "nokogiri"
 
 # Vendor prefixes for sass
 gem 'middleman-autoprefixer'
