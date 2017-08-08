@@ -95,6 +95,10 @@ GEM
     middleman-autoprefixer (2.8.0)
       autoprefixer-rails (>= 7.0.1, < 8.0.0)
       middleman-core (>= 3.3.3)
+    middleman-blog (4.0.2)
+      addressable (~> 2.3)
+      middleman-core (~> 4.0)
+      tzinfo (>= 0.3.0)
     middleman-compass (4.0.1)
       compass (>= 1.0.0, < 2.0.0)
       middleman-core (>= 4.0.0)
@@ -148,6 +152,7 @@ PLATFORMS
 DEPENDENCIES
   middleman!
   middleman-autoprefixer
+  middleman-blog
   middleman-compass
   middleman-livereload
   middleman-sprockets

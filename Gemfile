@@ -10,8 +10,9 @@ gem 'rack-cache'
 
 
 gem "middleman", github: 'middleman/middleman', ref: '09f3be9ab'
-gem "middleman-sprockets"
+gem "middleman-blog"
 gem "middleman-compass"
+gem "middleman-sprockets"
 
 # Vendor prefixes for sass
 gem 'middleman-autoprefixer'
