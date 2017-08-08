@@ -9,19 +9,10 @@
             Revolutionary Democratic Socialism
         %ul.horizontal.menu.links
           %li
-            %a{ href: 'index.html', class: "#{active[:index] ? 'active': ''}"}Home
+            = link_to 'Home', '/index.html', class: "#{active[:index] ? 'active': ''}"
           %li
-            %a{ href: 'readings.html', class: "#{active[:readings] ? 'active': ''}"}Readings
+            = link_to 'Readings', '/readings.html', class: "#{active[:readings] ? 'active': ''}"
           %li
-            %a{ href: 'events.html', class: "#{active[:events] ? 'active': ''}"} Events
+            = link_to 'Events', '/events.html', class: "#{active[:events] ? 'active': ''}"
           %li
-            %a{ href: 'news.html', class: "#{active[:news] ? 'active': ''}"} News
-        /     %a{href: '#who-we-are'}Who We Are
-        /   %li
-        /     %a{href: '#our-principles'}Our Principles
-        /   %li
-        /     %a{href: '#what-we-engage-in'}What We Engage In
-        /   %li
-        /     %a{href: '#our-vision'}Our Vision
-        /   %li
-        /     %a{href: '#join-us'}Join Us
+            = link_to 'News', '/news.html', class: "#{active[:news] ? 'active': ''}"
