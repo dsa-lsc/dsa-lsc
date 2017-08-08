@@ -1,0 +1,17 @@
+= partial :header, locals: { active: { news: true } }
+
+.row.content
+  %article.medium-6.columns.medium-centered.small-12
+    .title.large-6
+      News
+    
+    - blog.articles[0...5].each do |article|
+      %article
+        %h3
+          = link_to article.title, article.url
+        %time
+          = article.date.strftime('%b %e %Y')
+        %p
+          = article.summary
+
+        = link_to 'Read More', article.url
